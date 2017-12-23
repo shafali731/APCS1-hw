@@ -1,0 +1,68 @@
+public class BankAccount {
+    public static void main (String [] args){
+      	//BankAccount shafaliAccount = new BankAccount("Shafali Gupta", "america", 1234, 999999999, 50);
+	//System.out.println(shafaliAccount.setPin(2121));
+	//shafaliAccount.displayInfo();
+	BankAccount shafaliAccount = new BankAccount();
+	shafaliAccount.displayInfo();
+    }
+    //instance vars
+    private String fullName;
+    private String accPass;
+    private int pin;
+    private int accNum;
+    private int accBal;
+    //constructor(s)
+    public BankAccount(){
+	fullName = "Enter Name";
+	accPass = "teamcodesgo";
+	pin = 1234;
+	accNum = 123456789;
+	accBal = 0;
+    }
+    
+    public BankAccount(String defFullName, String defAccPass, int defPin, int defAccNum, int defAccBal){
+	fullName = defFullName;
+	accPass = defAccPass;
+	pin = defPin;
+	accNum = defAccNum;
+	accBal = defAccBal;
+       
+    }
+    //methods
+    public String setFullName(String name){
+	fullName = name;
+	return fullName;
+    }
+    public String setAccPass(String password){
+	accPass = password;
+	return accPass;
+    }
+    public int setPin(int userPin){
+	pin = userPin;
+	return pin;
+    }
+    public int setAccNum(int userAccNum){
+	accNum = userAccNum;
+	return accNum;
+    }
+    public int setAccBal(int balance){
+	accBal = balance;
+	return accBal;
+    }
+    public void displayInfo(){
+	System.out.println(fullName);
+	System.out.println(accPass);
+	System.out.println(pin);
+	System.out.println(accNum);
+	System.out.println(accBal);
+    }
+    public int depositMoney(int depositAmt){
+	accBal = accBal + depositAmt;
+	return accBal;
+    }
+    public int withdrawMoney(int withdrawAmt){
+	accBal = accBal - withdrawAmt;
+	return accBal;
+    }
+}

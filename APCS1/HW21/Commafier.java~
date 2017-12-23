@@ -1,0 +1,18 @@
+public class Commafier{
+    public static String commafyR(int){
+	strInt= Integer.toString(int);
+	L= strInt.length();
+	newNum= ""
+	    if (L<=3){
+		return strInt + newNum;
+	    }
+	
+	newNum = "," + Commafier(strInt.substring(0, L-3)) + newNum;
+	strInt= strInt.substring(0, L-3); 
+
+    }
+}
+
+	
+	
+	

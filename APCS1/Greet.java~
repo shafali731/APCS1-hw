@@ -1,0 +1,14 @@
+/*Shafali Gupta
+APCS1 pd8
+HW02 --  Howdy, <Very interesting Person>!
+2017-09-13 */
+
+public class Greet{
+    public static void main( String[] args){
+	String greeting;
+	Bigsib richard = new Bigsib();
+	richard.setHelloMsg( "Word up" );
+	greeting = richard.greet( "freshman" );
+	System.out.println(greeting);
+    }
+}

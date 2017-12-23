@@ -1,0 +1,48 @@
+public class Coin{
+    // instance vars
+    private double value;
+    private String upFace;
+    private String name;
+    private int flipCtr;
+    private int headsCtr, tailsCtr;
+    private double bias;
+    
+       
+    public Coin(){
+	upFace = "heads";
+	bias= .5;
+    } ///end overloaded
+
+    public Coin(String s){
+	this();
+	name = s;
+    } //end 1st overloaded
+
+    public Coin(String s, String a){
+	this();
+	name = s;
+	upFace = a;
+    }  //end 2nd overloaded
+    
+    public String toString(){
+	return name + " " +  upFace;
+    }// overridden toString method
+
+    public String flip(){
+	if (Math.random()< bias){
+	    upFace= "heads";
+	    return "heads";}
+	else{
+	    upFace= "tails";
+	    return "tails";}
+    } // flip
+
+    public boolean equals(Coin instance){
+	return upFace.equals(instance.upFace);
+    }
+    
+	    
+    
+
+    
+}//end class 

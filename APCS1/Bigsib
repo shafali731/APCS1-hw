@@ -1,0 +1,6 @@
+public class Bigsib{
+    public static void main(String [] args){
+    }
+    public static void greet(String x){
+	System.out.println("Why, hello " +x+ ". How do you do?");
+    }}

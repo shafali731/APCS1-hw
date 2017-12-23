@@ -1,0 +1,11 @@
+puclic class Foresrever{
+    public String fenceF(int posts){
+	for(String fen = "|"; posts !=0; fen +="--1", posts -=1);
+	return fen;
+    }
+
+
+    public static void main(String [] args){
+	System.out.println(fenceF(3));
+    }
+	    

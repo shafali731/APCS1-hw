@@ -1,0 +1,49 @@
+import java.util.Random;
+
+public class Loopier{
+
+    public static void populate(int[] anArray){
+	Random r =new Random();
+	for (int i =0;i< anArray.length; i++)
+	    anArray[i]=r.nextInt(2);
+	// anArray;
+    }
+    public static String stringify(int[] anArray){
+	String result="[";
+	for (int i=0; i<anArray.length; i++){
+	    result+= anArray[i];
+	    // System.out.println(result);
+	}
+	result+= "]";
+	return result;
+    }
+
+    public static int linSearch(int[] a, int target){
+	for(int i=0; i< a.length; i++)
+	    if (a[i]== target){
+		return i;
+	    }
+	return -1;
+    }
+    public static int linSearchR(int[]a, int target){
+	int i =a.length -1;
+	if (a[0]== target){
+	    return 0;
+	}
+	return i;
+    }
+
+    public static void main(String[] args){
+	int[] hi;
+	hi= new int[10];
+	populate(hi);
+	System.out.println(stringify(hi));
+	System.out.println(linSearch(hi, 1));
+	System.out.println(linSearch(hi, 4));
+	//	System.out.println(linSearchR(hi,5));
+	//	System.out.println
+
+	// populate(some);
+    }
+
+}

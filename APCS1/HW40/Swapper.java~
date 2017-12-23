@@ -1,0 +1,32 @@
+/* 
+Shafali Gupta 
+APCS1 pd08 
+HW40 -- Make It Better
+2017-11-24
+*/
+
+import cs1.Keyboard;
+public class Swapper{
+    public static void print (String [] [] a){
+	int ctr = 0;
+	for( String [] row: a){
+	    System.out.println(ctr + "\t");
+	    for (String col: row){
+		System.out.println(col + "\t");
+	    }
+	}}
+     public static void main(String[] args){
+	
+	String [][] array = { {"a", "b", "c"},
+			      {"d", "e", "f"},
+				  {"g","h","i"},
+				    {"j", "k", "l"}};
+	    print(array);//prints the array
+	    // swap(array);// asks the user and properly swaps
+	    // print(array);//prints the array with the swap 
+    }
+	
+}//end of class Swappers
+
+
+  
